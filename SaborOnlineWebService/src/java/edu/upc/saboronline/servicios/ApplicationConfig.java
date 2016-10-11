@@ -30,6 +30,7 @@ public class ApplicationConfig extends Application {
      */
     private void addRestResourceClasses(Set<Class<?>> resources) {
         resources.add(edu.upc.saboronline.servicios.PedidoClienteFacadeREST.class);
+    resources.add(edu.upc.saboronline.servicios.ReservaMesaFacadeREST.class);
     resources.add(edu.upc.saboronline.servicios.UsuarioFacadeREST.class);
     }
     

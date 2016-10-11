@@ -1,8 +1,8 @@
 package edu.upc.saboronline.web;
 
-import edu.upc.saboronline.entidades.Pedido;
 import edu.upc.saboronline.servicios.PedidoClienteService;
 import edu.upc.saboronline.web.forms.PedidoForm;
+import edu.upc.saboronline.web.forms.UsuarioForm;
 import java.util.Map;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;

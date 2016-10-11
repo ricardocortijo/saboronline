@@ -4,6 +4,7 @@
     <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
     <class>edu.upc.saboronline.entidades.PedidoDetalle</class>
     <class>edu.upc.saboronline.entidades.Pedido</class>
+    <class>edu.upc.saboronline.entidades.ReservaMesa</class>
     <properties>
       <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/db_sabor_online?zeroDateTimeBehavior=convertToNull"/>
       <property name="javax.persistence.jdbc.user" value="root"/>

@@ -31,6 +31,10 @@
     <put-attribute name="title" value="Sabor Online :: Pedidos a Domicilio" />
     <put-attribute name="body" value="/jsp/formPedidosDomicilio.jsp" />
   </definition>
+  <definition name="reservasCliente" extends="userCliente.definition">
+    <put-attribute name="title" value="Sabor Online :: Reserva de Mesa" />
+    <put-attribute name="body" value="/jsp/formReservasMesas.jsp" />
+  </definition>
   <definition name="consultaVer" extends="userCliente.definition">
     <put-attribute name="title" value="Sabor Online :: Ver Consulta" />
     <put-attribute name="body" value="/jsp/consultaVer.jsp" />

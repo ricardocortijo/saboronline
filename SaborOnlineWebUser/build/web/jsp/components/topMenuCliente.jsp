@@ -7,7 +7,7 @@
           <a class="dropdown-toggle" data-toggle="dropdown" href="#">Solicitudes<b class="caret"></b></a>
           <ul class="dropdown-menu">
             <li><a href="formPedidosDomicilio.html">Pedidos a Domicilio</a></li>
-            <li><a href="formReservas.html">Reservas de Mesas</a></li>
+            <li><a href="formReservasMesas.html">Reservas de Mesas</a></li>
             <li><a href="historialConsultas.html">Historial de Consultas</a></li>
             <!--
             <li class="divider"></li>
