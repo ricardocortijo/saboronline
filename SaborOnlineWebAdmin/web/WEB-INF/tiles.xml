@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+       
+<tiles-definitions>
+  
+  <definition name="base.definition" template="/jsp/templates/parentLayout.jsp">
+    <put-attribute name="title" value="" />
+    <put-attribute name="header" value="/jsp/components/header.jsp" />
+    <put-attribute name="body" value="" />
+    <put-attribute name="footer" value="/jsp/components/footer.jsp" />
+  </definition>
+  <definition name="userEmprendedor.definition" template="/jsp/templates/userEmprendedorLayout.jsp">
+    <put-attribute name="title" value="" />
+    <put-attribute name="header" value="/jsp/components/header.jsp" />
+    <put-attribute name="topMenu" value="/jsp/components/topMenuEmprendedor.jsp" />
+    <put-attribute name="body" value="" />
+    <put-attribute name="footer" value="/jsp/components/footer.jsp" />
+  </definition>
+  <definition name="userAdmin.definition" template="/jsp/templates/userAdminLayout.jsp">
+    <put-attribute name="title" value="" />
+    <put-attribute name="header" value="/jsp/components/header.jsp" />
+    <put-attribute name="topMenu" value="/jsp/components/topMenuAdmin.jsp" />
+    <put-attribute name="body" value="" />
+    <put-attribute name="footer" value="/jsp/components/footer.jsp" />
+  </definition>
+ 
+  <definition name="logeo" extends="base.definition">
+    <put-attribute name="title" value="SVPN Web :: Autenticación del Sistema" />
+    <put-attribute name="body" value="/jsp/logeo.jsp" />
+  </definition>
+  <definition name="indexEmprendedor" extends="userEmprendedor.definition">
+    <put-attribute name="title" value="SVPN Web :: Inicio" />
+    <put-attribute name="body" value="/jsp/indexEmprendedor.jsp" />
+  </definition>
+  <definition name="planesNegocioEmprendedorBusqueda" extends="userEmprendedor.definition">
+    <put-attribute name="title" value="SVPN Web :: Planes de Negocio" />
+    <put-attribute name="body" value="/jsp/planesNegocioEmprendedorBusqueda.jsp" />
+  </definition>
+  <definition name="planNegocioEmprendedorVer" extends="userEmprendedor.definition">
+    <put-attribute name="title" value="SVPN Web :: Planes de Negocio" />
+    <put-attribute name="body" value="/jsp/planNegocioEmprendedorVer.jsp" />
+  </definition>
+  
+  <definition name="indexAdmin" extends="userAdmin.definition">
+    <put-attribute name="title" value="SVPN Web :: Inicio" />
+    <put-attribute name="body" value="/jsp/indexAdmin.jsp" />
+  </definition>
+  <definition name="listadoEmprendedores" extends="userAdmin.definition">
+    <put-attribute name="title" value="SVPN Web :: Emprendedores" />
+    <put-attribute name="body" value="/jsp/listadoEmprendedores.jsp" />
+  </definition>
+  <definition name="formEmprendedor" extends="userAdmin.definition">
+    <put-attribute name="title" value="SVPN Web :: Emprendedor" />
+    <put-attribute name="body" value="/jsp/formEmprendedor.jsp" />
+  </definition>
+ 
+</tiles-definitions>

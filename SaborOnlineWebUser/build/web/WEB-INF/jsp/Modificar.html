@@ -1,0 +1,258 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd">
+<HTML xmlns="http://www.w3.org/1999/xhtml"><HEAD><TITLE>SISTEMA DE VENTAS DE PLANES DE NEGOCIO</TITLE>
+<META http-equiv=Content-Type content="text/html; charset=utf-8"><LINK 
+href="css/Intranet.css" 
+type=text/css rel=stylesheet><LINK 
+href="css/table_sort.css" 
+type=text/css rel=stylesheet>
+<SCRIPT src="js/jquery-1.4.1.js" 
+type=text/javascript></SCRIPT>
+<SCRIPT 
+src="js/jquery.tablesorter.js" 
+type=text/javascript></SCRIPT>
+<!--AvisosModalPopUp-->
+<SCRIPT src="js/shCore.js" 
+type=text/javascript></SCRIPT>
+<SCRIPT 
+src="js/shBrushJScript.js" 
+type=text/javascript></SCRIPT>
+<LINK 
+href="css/SyntaxHighlighter.css" 
+type=text/css rel=stylesheet>
+<STYLE type=text/css>.opcion {
+	PADDING-RIGHT: 12px; PADDING-LEFT: 12px; BACKGROUND: #fbfcff; PADDING-BOTTOM: 3px; PADDING-TOP: 3px
+}
+.opcionOver {
+	PADDING-RIGHT: 12px; PADDING-LEFT: 12px; FONT-WEIGHT: bold; BACKGROUND: #eeeeee; PADDING-BOTTOM: 3px; PADDING-TOP: 3px
+}
+.txtopcion {
+	FONT-WEIGHT: bold; FONT-SIZE: 12px; VERTICAL-ALIGN: middle; COLOR: #3f7aca; FONT-FAMILY: Arial, Helvetica, sans-serif
+}
+.txtopcion A {
+	TEXT-DECORATION: none
+}
+.iconOpc {
+	VERTICAL-ALIGN: middle; MARGIN-RIGHT: 2px
+}
+A:link {
+	COLOR: #3f7aca
+}
+A:visited {
+	COLOR: #3f7aca
+}
+</STYLE>
+
+<BODY>
+<DIV>
+<TABLE id=cabecera cellSpacing=0 cellPadding=0 width="100%">
+  <TBODY>
+  <TR>
+    <TD>
+      <TABLE id=cabecera_sup>
+        <TBODY>
+        <TR>
+          <TD width="50%"></TD>
+          <TD align=right width="50%"><SPAN id=ctl00_lblNomUsuario>Pajuelo Rubina Edgar</SPAN></TD></TR></TBODY></TABLE></TD></TR>
+  <TR>
+    <TD>
+      <TABLE cellSpacing=0 cellPadding=0 width="100%">
+        <TBODY>
+        <TR>
+          <TD 
+          style="WIDTH: 40px; BORDER-BOTTOM: #e7e7e8 3px solid; HEIGHT: 40px" 
+          vAlign=center><IMG 
+            src="img/tmIcon.png"> 
+          </TD>
+          <TD style="BORDER-BOTTOM: #e7e7e8 3px solid; HEIGHT: 30px" 
+          vAlign=center><SPAN class=Subtitulo>SISTEMA DE VENTAS DE PLANES DE NEGOCIO - Modificar Plan</SPAN> </TD></TR></TBODY></TABLE></TD></TR>
+  <TR>
+    <TD vAlign=top align=left>
+      <DIV style="MARGIN: 15px">
+      <table  border="0" cellpadding="0" cellspacing="0">
+      <tr>
+             
+	   </tr>
+      </table>
+      <DIV id=ctl00_ContentPlaceHolder1_PnlUsuarios>
+      <TABLE cellSpacing=0 cellPadding=0 width="100%" border=0>
+        <TBODY>
+        <tr>
+        <td width="100%">
+           <table cellpadding="0" cellspacing="0" width="700px;">
+         <tr>
+         
+           <td>&nbsp;</td>
+         </tr>
+  
+         <tr>
+         <td class="txtopcion">
+               Busqueda por:  
+         </td>
+         <td> 
+            <select style="width:150px;" >
+               <option>Título</option>
+                <option>Categoria</option>
+                 <option>Visión del negocio</option>
+            </select>
+              <input type="text"  style="width:350px;" > 
+         </td>
+        </tr>
+          
+         <tr>
+         <td class="txtopcion">
+               Tiempo de ejecución:  
+         </td>
+         <td> 
+             <select>
+               <option>mayor que </option>
+               <option>menor que</option>
+               <option>igual </option>
+            </select>
+              <input type="text"   style="width:55px;" > 
+         </td>
+        </tr>
+        <tr>
+        <td class="txtopcion">
+              Inversión total:  
+         </td>
+         <td> 
+               <select>
+               <option>S/.</option>
+               <option>$</option>
+            </select>
+              <input type="text" style="width:100px;" > 
+         </td>
+        </tr>
+         <tr>
+        <td class="txtopcion">
+              Margen neto 1er año:  
+         </td>
+         <td> 
+               <select>
+               <option>S/.</option>
+               <option>$</option>
+            </select>
+              <input type="text" style="width:100px;" > 
+         </td>
+        </tr>
+          <tr>
+        <td class="txtopcion">
+              ROI:  
+         </td>
+         <td> 
+               <select>
+               <option>S/.</option>
+               <option>$</option>
+            </select>
+              <input type="text" style="width:100px;"> 
+         </td>
+        </tr>
+          <tr>
+        <td class="txtopcion" colspan="2" align="right">
+   
+            <input type="button" value="Buscar" style="width:150px;">
+         </td>
+       
+        </tr>
+            <tr>
+         
+           <td>&nbsp;</td>
+         </tr>
+           </table>
+        
+        </td>
+         
+        </tr>
+        <TR>
+          <TD 
+          style="PADDING-RIGHT: 10px; PADDING-LEFT: 10px; PADDING-BOTTOM: 10px; PADDING-TOP: 10px" 
+          align=left>
+            <DIV>
+            <TABLE class=Tabla id=ctl00_ContentPlaceHolder1_gvUsuarios 
+            style="BORDER-COLLAPSE: collapse" cellSpacing=0 rules=all 
+              border=1><TBODY>
+              <TR class=tr_Cabecera align=middle>
+                <TH scope=col>Tíulo</TH>
+                <TH scope=col>Tiempo de ejecución</TH>
+                <TH scope=col>Inversión total</TH>
+                <TH scope=col>Margen neto<br> 1er año</TH>
+                <TH scope=col>ROI</TH>
+                <TH scope=col>Modificar</TH>
+				</TR>
+              <TR class=tr_Fila1 
+              onmouseover="this.style.backgroundColor='#FCE59E'" 
+              onmouseout="this.style.backgroundColor='#FFFFFF'">
+                <TD style="WIDTH: 250px">Proyecto 1</TD>
+                <TD style="WIDTH: 220px" align="center">3 años</TD>
+                <TD style="WIDTH: 160px" align="left">S/. 43,233,343.00</TD>
+                <TD style="WIDTH: 140px" align="left">S/. 12,233,343.00</TD>
+                <TD style="WIDTH: 60px" align="center">1,5</TD>
+                <TD style="WIDTH: 80px" align="center"><A 
+                  id=ctl00_ContentPlaceHolder1_gvUsuarios_ctl02_editbtn2 
+                  href='#'><IMG 
+                  style="VERTICAL-ALIGN: middle" 
+                  src="img/settings1_16x16.png" 
+                  border=0></A> </TD>
+				</A></TD>
+              <TR class=tr_Fila2 
+              onmouseover="this.style.backgroundColor='#FCE59E'" 
+              onmouseout="this.style.backgroundColor='#E7E7E8'">
+                <TD style="WIDTH: 250px">Proyecto 2</TD>
+                <TD style="WIDTH: 220px" align="center"> 5 años</TD>
+                <TD style="WIDTH: 160px" align="left">$ 5,233,343.00</TD>
+                <TD style="WIDTH: 140px" align="left">$ 4,233,343.00</TD>
+                <TD style="WIDTH: 60px" align="center">0.8</TD>
+                <TD style="WIDTH: 80px" align="center"><A 
+                  id=ctl00_ContentPlaceHolder1_gvUsuarios_ctl03_editbtn2 
+                  href='#'><IMG 
+                  style="VERTICAL-ALIGN: middle" 
+                  src="img/settings1_16x16.png" 
+                  border=0></A> </TD>
+				<TR class=tr_Fila1 
+              onmouseover="this.style.backgroundColor='#FCE59E'" 
+              onmouseout="this.style.backgroundColor='#FFFFFF'">
+                <TD style="WIDTH: 250px">Proyecto 3</TD>
+                <TD style="WIDTH: 220px" align="center">3 años</TD>
+                <TD style="WIDTH: 160px" align="left">S/. 43,233,343.00</TD>
+                <TD style="WIDTH: 140px" align="left">S/. 12,233,343.00</TD>
+                <TD style="WIDTH: 60px" align="center">1,5</TD>
+                <TD style="WIDTH: 80px" align="center"><A 
+                  id=ctl00_ContentPlaceHolder1_gvUsuarios_ctl02_editbtn2 
+                  href='#'><IMG 
+                  style="VERTICAL-ALIGN: middle" 
+                  src="img/settings1_16x16.png" 
+                  border=0></A> </TD>
+			   </A> </TD>
+              <TR class=tr_Fila2 
+              onmouseover="this.style.backgroundColor='#FCE59E'" 
+              onmouseout="this.style.backgroundColor='#E7E7E8'">
+                <TD style="WIDTH: 250px">Proyecto 4</TD>
+                <TD style="WIDTH: 220px" align="center"> 5 años</TD>
+                <TD style="WIDTH: 160px" align="left">$ 5,233,343.00</TD>
+                <TD style="WIDTH: 140px" align="left">$ 4,233,343.00</TD>
+                <TD style="WIDTH: 60px" align="center">0.8</TD>
+                <TD style="WIDTH: 80px" align="center"><A 
+                  id=ctl00_ContentPlaceHolder1_gvUsuarios_ctl03_editbtn2 
+                  href='#'><IMG 
+                  style="VERTICAL-ALIGN: middle" 
+                  src="img/settings1_16x16.png" 
+                  border=0></A> </TD>
+				</A> </TD>
+             </TBODY></TABLE></DIV></TD></TR></TBODY></TABLE></DIV></DIV></TD></TR>
+  <TR>
+    <TD></TD></TR></TBODY></TABLE></DIV>
+</tr>
+      </table>
+     <table cellpadding="0" cellspacing="5" border="0" width="550px">
+	</tr>
+    </table>
+    </div>
+      <tr>
+      <td colspan="2" style="width:100%">
+      <hr  style="border:1px solid #E7E7E8;" />
+      </td>
+         <tr>
+             <td align="right" colspan="2">
+               <input type="button" value="Cancelar" onClick="history.go(-1);return true;" />
+</BODY>
+</HTML>
